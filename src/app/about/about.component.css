@@ -1,3 +1,4 @@
+/* ABOUT ME */
 .resume-about__contrainer,
 .resume-about__text-contrainer {
   display: flex;
@@ -38,34 +39,88 @@
   color: #333;
 }
 
+/* BOX-SKILL */
+
+.resume-about__row,
+.title-center > div > p,
+.resume-about__skill-box,
+.resume-about__svg,
+.resume-about__skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-about__row {
+  margin: 0 auto;
+  width: 100%;
+  height: 70vh;
+}
+
+.title-center {
+  flex-direction: column;
+  width: 70%;
+  height: fit-content;
+}
+
+.title-center > div > p {
+  margin: 0 auto;
+  text-align: center;
+  width: 70%;
+  color: gray;
+}
+
+.resume-about__skill-box {
+  flex-direction: column;
+  color: rgb(54, 171, 54);
+  background-color: #333;
+  border: 1px solid black;
+  width: 250px;
+  height: 250px;
+  margin: 0.5rem;
+  border-radius: 6px;
+}
+
+.resume-about__svg {
+  width: 50px;
+  height: 50px;
+  border: 1px double rebeccapurple;
+}
+
+.resume-about__skill {
+    margin-top: 50px;
+}
+
+/* MEDIA */
+
 @media screen and (min-width: 360px) {
-    .resume-about__contrainer {
-        flex-wrap: wrap-reverse;
-        padding: 0rem;
-      }
-    
-      .resume-about__image {
-        width: 100%;
-        height: 50vh;
-        margin: 2rem;
-      }
-    
-      .resume-about__text-container {
-        width: 100%;
-        padding: 1rem;
-      }
-    
-      .resume-about__title {
-        padding: 1rem;
-        font-weight: 700;
-        font-size: 2.5rem;
-      }
-    
-      .resume-about__desc {
-        padding: 1rem;
-        font-size: 1rem;
-        color: #333;
-      }
+  .resume-about__contrainer {
+    flex-wrap: wrap-reverse;
+    padding: 0rem;
+  }
+
+  .resume-about__image {
+    width: 100%;
+    height: 50vh;
+    margin: 2rem;
+  }
+
+  .resume-about__text-container {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .resume-about__title {
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+
+  .resume-about__desc {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #333;
+  }
 }
 @media screen and (min-width: 650) {
 }
@@ -78,7 +133,7 @@
   .resume-about__image {
     width: 100%;
     height: 70vh;
-    margin: .1rem 3rem;
+    margin: 0.1rem 3rem;
   }
 
   .resume-about__text-container {
@@ -99,7 +154,7 @@
   }
 }
 @media screen and (min-width: 1000px) {
-    .resume-about__contrainer,
+  .resume-about__contrainer,
   .resume-about__text-contrainer {
     flex-wrap: nowrap;
     padding: 5rem;
