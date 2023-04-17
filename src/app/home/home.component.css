@@ -1,10 +1,10 @@
-.page{
+.page {
   display: flex;
   align-items: center;
   height: 91vh;
   width: 100vw;
 }
-.content{
+.content {
   position: relative;
   max-width: 60vw;
   padding: 0 4rem;
@@ -25,12 +25,12 @@
   display: flex;
 }
 
-.typing{
+.typing {
   margin-left: 1rem;
-  color: #E41BA0;
+  color: #e41ba0;
 }
 
-.description{
+.description {
   font-size: 1.2rem;
   color: #666;
   margin: 1.2rem 0;
@@ -54,27 +54,26 @@
 }
 
 fa-icon {
-  color: #E41BA0;
+  color: #e41ba0;
   font-size: 1.5rem;
   padding: 0.3rem;
   top: 0.05rem;
 }
 
-.chat{
+.chat {
   color: #333;
   background-color: transparent;
 }
 
-footer{
+footer {
   position: absolute;
   bottom: 2rem;
   margin-left: 5rem;
 }
 
-.contact{
+.contact {
   display: flex;
   gap: 2rem;
-
 }
 
 .contact-link {
@@ -85,21 +84,22 @@ footer{
   text-decoration: none;
 }
 
-.icon{
+.icon {
   font-size: 1.7rem;
   color: #333;
 }
 
-.icon:hover{
-  color: #E41BA0;
+.icon:hover {
+  color: #e41ba0;
 }
 
 .color-bk {
   position: absolute;
   right: 0;
+  bottom: 0;
   width: 800px;
   height: 800px;
-  background-image: url('../images/splash.png');
+  background-image: url("../images/splash.png");
   background-position: -50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -107,23 +107,22 @@ footer{
 }
 
 @keyframes animatedColors {
-  0%,100%
-  {
+  0%,
+  100% {
     transform: translateY(0px);
   }
-  50%
-  {
+  50% {
     transform: translateY(25px);
   }
 }
 
-.man{
+.man {
   position: absolute;
   bottom: 2rem;
   right: 15rem;
   width: 500px;
   height: 500px;
-  background-image: url('../images/man.png');
+  background-image: url("../images/man.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -131,13 +130,497 @@ footer{
 }
 
 @keyframes animatedMan {
-  0%,100%
-  {
+  0%,
+  100% {
     transform: translateX(0px);
   }
-  50%
-  {
+  50% {
     transform: translateX(25px);
   }
 }
 
+/* MEDIA */
+
+@media screen and (min-width: 360px) {
+  .page {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    width: 100vw;
+  }
+  .content {
+    position: relative;
+    max-width: 100%;
+    padding: 0 2rem;
+    z-index: 10;
+  }
+
+  .title {
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: #333;
+    transition: 0.5s;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    display: flex;
+  }
+
+  .typing {
+    margin-left: 1rem;
+    color: #e41ba0;
+  }
+
+  .description {
+    font-size: 1rem;
+    color: #333;
+    margin: 1rem 0;
+    transition: 0.5s;
+  }
+
+  .btn {
+    position: relative;
+    background: rgb(23, 221, 119);
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    margin-right: 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  fa-icon {
+    color: #e41ba0;
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    top: 0.05rem;
+  }
+  .chat {
+    color: #333;
+    background-color: transparent;
+  }
+  footer {
+    display: flex;
+  }
+  .color-bk {
+    position: absolute;
+    right: 0;
+    bottom: 60%;
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/splash.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: animatedColors 8s ease-in-out infinite;
+  }
+  .man {
+    position: absolute;
+    bottom: 10rem;
+    right: 1rem;
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/man.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: animatedMan 8s ease-in-out infinite;
+  }
+}
+@media screen and (min-width: 750px) {
+  .page {
+    display: flex;
+    align-items: center;
+    height: 91vh;
+    width: 100vw;
+  }
+  .content {
+    position: relative;
+    max-width: 80%;
+    padding: 0 4rem;
+    z-index: 10;
+  }
+
+  .title {
+    font-weight: 200;
+    font-size: 2rem;
+    color: #333;
+    transition: 0.5s;
+  }
+
+  .subtitle {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #333;
+    display: flex;
+  }
+
+  .typing {
+    margin-left: 1rem;
+    color: #e41ba0;
+  }
+
+  .description {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 1.2rem 0;
+    transition: 0.5s;
+  }
+
+  .btn {
+    position: relative;
+    background: rgb(23, 221, 119);
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    letter-spacing: 0.05rem;
+    margin-right: 1.1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  fa-icon {
+    color: #e41ba0;
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    top: 0.05rem;
+  }
+  .chat {
+    color: #333;
+    background-color: transparent;
+  }
+  footer {
+    position: absolute;
+    bottom: 2rem;
+    margin-left: 5rem;
+  }
+  .contact {
+    display: flex;
+    gap: 2rem;
+  }
+  .contact-link {
+    list-style: none;
+  }
+  .contact-link a {
+    text-decoration: none;
+  }
+  .icon {
+    font-size: 1.7rem;
+    color: #333;
+  }
+  .icon:hover {
+    color: #e41ba0;
+  }
+  .color-bk {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    height: 400px;
+    background-image: url("../images/splash.png");
+    background-position: -50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: animatedColors 8s ease-in-out infinite;
+  }
+  @keyframes animatedColors {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(25px);
+    }
+  }
+  .man {
+    position: absolute;
+    bottom: 2rem;
+    right: 15rem;
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/man.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: animatedMan 8s ease-in-out infinite;
+  }
+  @keyframes animatedMan {
+    0%,
+    100% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(25px);
+    }
+  }
+}
+@media screen and (min-width: 1600px) {
+  .page {
+    display: flex;
+    align-items: center;
+    height: 91vh;
+    width: 100vw;
+  }
+  .content {
+    position: relative;
+    max-width: 60vw;
+    padding: 0 4rem;
+    z-index: 10;
+  }
+
+  .title {
+    font-weight: 200;
+    font-size: 2rem;
+    color: #333;
+    transition: 0.5s;
+  }
+
+  .subtitle {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #333;
+    display: flex;
+  }
+
+  .typing {
+    margin-left: 1rem;
+    color: #e41ba0;
+  }
+
+  .description {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 1.2rem 0;
+    transition: 0.5s;
+  }
+
+  .btn {
+    position: relative;
+    background: rgb(23, 221, 119);
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    letter-spacing: 0.05rem;
+    margin-right: 1.1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  fa-icon {
+    color: #e41ba0;
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    top: 0.05rem;
+  }
+  .chat {
+    color: #333;
+    background-color: transparent;
+  }
+  footer {
+    position: absolute;
+    bottom: 2rem;
+    margin-left: 5rem;
+  }
+  .contact {
+    display: flex;
+    gap: 2rem;
+  }
+  .contact-link {
+    list-style: none;
+  }
+  .contact-link a {
+    text-decoration: none;
+  }
+  .icon {
+    font-size: 1.7rem;
+    color: #333;
+  }
+  .icon:hover {
+    color: #e41ba0;
+  }
+  .color-bk {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 800px;
+    height: 800px;
+    background-image: url("../images/splash.png");
+    background-position: -50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: animatedColors 8s ease-in-out infinite;
+  }
+  @keyframes animatedColors {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(25px);
+    }
+  }
+  .man {
+    position: absolute;
+    bottom: 2rem;
+    right: 15rem;
+    width: 500px;
+    height: 500px;
+    background-image: url("../images/man.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: animatedMan 8s ease-in-out infinite;
+  }
+  @keyframes animatedMan {
+    0%,
+    100% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(25px);
+    }
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .page {
+    display: flex;
+    align-items: center;
+    height: 91vh;
+    width: 100vw;
+  }
+  .content {
+    position: relative;
+    max-width: 60vw;
+    padding: 0 4rem;
+    z-index: 10;
+  }
+
+  .title {
+    font-weight: 200;
+    font-size: 2rem;
+    color: #333;
+    transition: 0.5s;
+  }
+
+  .subtitle {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #333;
+    display: flex;
+  }
+
+  .typing {
+    margin-left: 1rem;
+    color: #e41ba0;
+  }
+
+  .description {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 1.2rem 0;
+    transition: 0.5s;
+  }
+
+  .btn {
+    position: relative;
+    background: rgb(23, 221, 119);
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    letter-spacing: 0.05rem;
+    margin-right: 1.1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  fa-icon {
+    color: #e41ba0;
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    top: 0.05rem;
+  }
+  .chat {
+    color: #333;
+    background-color: transparent;
+  }
+  footer {
+    position: absolute;
+    bottom: 2rem;
+    margin-left: 5rem;
+  }
+  .contact {
+    display: flex;
+    gap: 2rem;
+  }
+  .contact-link {
+    list-style: none;
+  }
+  .contact-link a {
+    text-decoration: none;
+  }
+  .icon {
+    font-size: 1.7rem;
+    color: #333;
+  }
+  .icon:hover {
+    color: #e41ba0;
+  }
+  .color-bk {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 800px;
+    height: 800px;
+    background-image: url("../images/splash.png");
+    background-position: -50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: animatedColors 8s ease-in-out infinite;
+  }
+  @keyframes animatedColors {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(25px);
+    }
+  }
+  .man {
+    position: absolute;
+    bottom: 2rem;
+    right: 15rem;
+    width: 500px;
+    height: 500px;
+    background-image: url("../images/man.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: animatedMan 8s ease-in-out infinite;
+  }
+  @keyframes animatedMan {
+    0%,
+    100% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(25px);
+    }
+  }
+}
