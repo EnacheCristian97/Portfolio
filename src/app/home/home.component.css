@@ -91,3 +91,51 @@ footer{
 .icon:hover{
   color: #E41BA0;
 }
+
+.color-bk {
+  position: absolute;
+  right: 0;
+  width: 800px;
+  height: 800px;
+  background-image: url('../images/splash.png');
+  background-position: -50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: animatedColors 8s ease-in-out infinite;
+}
+
+@keyframes animatedColors {
+  0%,100%
+  {
+    transform: translateY(0px);
+  }
+  50%
+  {
+    transform: translateY(25px);
+  }
+}
+
+.man{
+  position: absolute;
+  bottom: 2rem;
+  right: 15rem;
+  width: 500px;
+  height: 500px;
+  background-image: url('../images/man.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: animatedMan 8s ease-in-out infinite;
+}
+
+@keyframes animatedMan {
+  0%,100%
+  {
+    transform: translateX(0px);
+  }
+  50%
+  {
+    transform: translateX(25px);
+  }
+}
+
