@@ -72,11 +72,11 @@
 
 .resume-about__skill-box {
   flex-direction: column;
-  color: rgb(54, 171, 54);
-  background-color: #333;
+  color: #ffffff;
+  background-color: rgb(9,137,120);
   border: 1px solid black;
-  width: 250px;
-  height: 250px;
+  width: 400px;
+  height: 400px;
   margin: 0.5rem;
   border-radius: 6px;
 }
