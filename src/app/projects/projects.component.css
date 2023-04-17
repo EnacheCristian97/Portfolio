@@ -1,0 +1,195 @@
+.resume-project__container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+}
+.resume-project__text-container {
+  width: 50%;
+  padding: 2rem;
+}
+.resume-project__title {
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 5rem;
+  color: rgb(23, 221, 119);
+}
+.resume-project__text {
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+.resume-grid__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+  gap: 10px;
+  width: 90%;
+  height: auto;
+  margin: 20px auto;
+}
+.resume-component__container {
+  width: 100%;
+  background-color: rgb(147, 144, 144);
+  position: relative;
+}
+.resume-component__image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-width: 3px;
+  border-style: solid;
+  animation: projects 6s infinite alternate;
+  cursor: pointer;
+}
+.resume-component__image > a > img {
+  width: 100%;
+  height: 100%;
+}
+.resume-component__card {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #e41ba0;
+  font-weight: bold;
+  bottom: 0;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.resume-component__container:hover .resume-component__card {
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+}
+.resume-component__container:hover .resume-component__image > a > img {
+  scale: 1.1;
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes projects {
+  0% {
+    border-image: linear-gradient(to bottom, #e41ba0, rgb(6, 211, 2)) 1 10%;
+  }
+  33% {
+    border-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(6, 211, 2)) 1 10%;
+  }
+  66% {
+    border-image: linear-gradient(to bottom, rgb(6, 211, 2), #e41ba0) 1 10%;
+  }
+  100% {
+    border-image: linear-gradient(to bottom, rgb(0, 0, 0), #e41ba0) 1 10%;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .resume-project__text-container {
+    width: 100%;
+    padding: 2rem;
+  }
+  .resume-project__title {
+    padding: 1rem;
+    font-size: 2.5rem;
+    color: rgb(23, 221, 119);
+  }
+  .resume-project__text {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #333;
+  }
+  .resume-grid__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+  }
+}
+@media screen and (min-width: 800px) {
+  .resume-project__text-container {
+    width: 75%;
+    padding: 2rem;
+  }
+  .resume-project__title {
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 5rem;
+    color: rgb(23, 221, 119);
+  }
+  .resume-project__text {
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  .resume-grid__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+  }
+}
+@media screen and (min-width: 1000px) {
+}
+@media screen and (min-width: 1200px) {
+  .resume-grid__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 10px;
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .resume-project__container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+  }
+  .resume-project__text-container {
+    width: 65%;
+    padding: 2rem;
+  }
+  .resume-project__title {
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 5rem;
+    color: rgb(23, 221, 119);
+  }
+  .resume-project__text {
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  .resume-grid__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 10px;
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .resume-grid__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 10px;
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .resume-grid__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 10px;
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+  }
+}
