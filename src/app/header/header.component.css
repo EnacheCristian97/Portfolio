@@ -5,7 +5,7 @@
 }
 
 nav {
-  position: static;
+  position: sticky;
   left: 0;
   top: 0;
   width: 100vw;
@@ -15,6 +15,7 @@ nav {
   align-items: center;
   transition: 0.5s;
   background: #fff;
+  z-index: 100;
 }
 
 .logo{
