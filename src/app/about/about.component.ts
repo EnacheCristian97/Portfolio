@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { faWindowMaximize } from '@fortawesome/free-regular-svg-icons/faWindowMaximize';
+import { faPaintbrush } from '@fortawesome/free-solid-svg-icons/faPaintbrush';
+import { faCode } from '@fortawesome/free-solid-svg-icons/faCode';
+import { faFileCode } from '@fortawesome/free-regular-svg-icons/faFileCode';
 
 @Component({
   selector: 'app-about',
@@ -7,5 +11,8 @@ import { Component } from '@angular/core';
 })
 
 export class AboutComponent {
-  
+  first = faWindowMaximize;
+  second = faCode;
+  third = faFileCode;
+  fourth = faPaintbrush;
 }
