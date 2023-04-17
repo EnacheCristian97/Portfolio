@@ -4,3 +4,11 @@
     background-position: center;
     background-size: cover;
 }
+
+.resume-about__title {
+    color: rgb(23, 221, 119);
+}
+
+.resume-about__desc {
+    color: #333;
+}
