@@ -50,3 +50,44 @@
   cursor: pointer;
   transition: 0.5s;
 }
+
+fa-icon {
+  color: #E41BA0;
+  font-size: 1.5rem;
+  padding: 0.3rem;
+  top: 0.05rem;
+}
+
+.chat{
+  color: #333;
+  background-color: transparent;
+}
+
+footer{
+  position: absolute;
+  bottom: 2rem;
+  margin-left: 5rem;
+}
+
+.contact{
+  display: flex;
+  gap: 2rem;
+
+}
+
+.contact-link {
+  list-style: none;
+}
+
+.contact-link a {
+  text-decoration: none;
+}
+
+.icon{
+  font-size: 1.7rem;
+  color: #333;
+}
+
+.icon:hover{
+  color: #E41BA0;
+}
