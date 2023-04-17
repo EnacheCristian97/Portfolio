@@ -64,6 +64,13 @@
 }
 
 @media screen and (min-width: 360px) {
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 110vh;
+  }
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
