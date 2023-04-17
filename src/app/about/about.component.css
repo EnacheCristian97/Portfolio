@@ -7,7 +7,6 @@
   align-items: center;
   padding: 5rem;
 }
-
 .resume-about__image {
   width: 50%;
   height: 70vh;
@@ -20,19 +19,16 @@
   margin: 1rem;
   box-shadow: 0 0 5px 1px #000;
 }
-
 .resume-about__text-container {
   width: 50%;
   padding: 5rem;
 }
-
 .resume-about__title {
   padding: 1rem;
   font-weight: 700;
   font-size: 5rem;
   color: rgb(23, 221, 119);
 }
-
 .resume-about__desc {
   padding: 1rem;
   font-size: 1.2rem;
@@ -50,26 +46,22 @@
   justify-content: center;
   align-items: center;
 }
-
 .resume-about__row {
   margin: 0 auto;
   width: 100%;
   height: 55vh;
 }
-
 .title-center {
   flex-direction: column;
   width: 70%;
   height: fit-content;
 }
-
 .title-center > div > p {
   margin: 0 auto;
   text-align: center;
   width: 70%;
   color: gray;
 }
-
 .resume-about__skill-box {
   flex-direction: column;
   color: #ffffff;
@@ -80,7 +72,6 @@
   margin: 0.5rem;
   border-radius: 6px;
 }
-
 .resume-about__svg {
   font-size: 5rem;
   cursor: pointer;
@@ -91,7 +82,6 @@
   scale: 1.1;
   color: #e41ba0;
 }
-
 .resume-about__skill {
   font-size: 1.2rem;
   margin-top: 50px;
@@ -105,76 +95,53 @@
     flex-wrap: wrap-reverse;
     padding: 0rem;
   }
-
   .resume-about__image {
     width: 100%;
     height: 50vh;
     margin: 2rem;
   }
-
   .resume-about__text-container {
     width: 100%;
     padding: 1rem;
   }
-
   .resume-about__title {
     padding: 1rem;
     font-weight: 700;
     font-size: 2.5rem;
   }
-
   .resume-about__desc {
     padding: 1rem;
     font-size: 1rem;
     color: #333;
   }
-
   .resume-about__row {
     flex-wrap: wrap;
-    margin: 0 auto;
     width: 100%;
     height: 45vh;
   }
-  
   .title-center {
-    flex-direction: column;
     width: 100%;
-    height: fit-content;
     padding: 1rem;
   }
-  
   .title-center > div > p {
     padding: 1rem;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     width: 100%;
-    color: gray;
   }
-  
   .resume-about__skill-box {
-    flex-direction: column;
-    color: #ffffff;
-    background-color: rgb(9,137,120);
-    border: 1px solid black;
-    width: 90%;
+    width: 80%;
     height: 250px;
     margin: 1rem;
-    border-radius: 6px;
   }
-  
   .resume-about__svg {
-    font-size: 5rem;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
+    font-size: 4rem;
   }
-  
   .resume-about__svg:hover {
     scale: 1.1;
-    color: #E41BA0;
   }
-  
   .resume-about__skill {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 50px;
     font-weight: bold;
   }
@@ -186,28 +153,48 @@
     flex-wrap: wrap-reverse;
     padding: 0rem;
   }
-
   .resume-about__image {
     width: 100%;
     height: 70vh;
     margin: 0.1rem 3rem;
   }
-
   .resume-about__text-container {
     width: 100%;
     padding: 4rem;
   }
-
   .resume-about__title {
     padding: 1rem;
-    font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
-
   .resume-about__desc {
     padding: 1rem;
     font-size: 1rem;
-    color: #333;
+  }
+  .resume-about__row {
+    width: 100%;
+    height: 55vh;
+  }
+  .title-center {
+    width: 70%;
+  }
+  .title-center > div > p {
+    text-align: center;
+    width: 70%;
+  }
+  .resume-about__skill-box {
+    width: 400px;
+    height: 350px;
+    margin: 0.5rem;
+  }
+  .resume-about__svg {
+    font-size: 4rem;
+  }
+  .resume-about__svg:hover {
+    scale: 1.1;
+  }
+  .resume-about__skill {
+    font-size: 1rem;
+    margin-top: 50px;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -221,70 +208,45 @@
     height: 70vh;
     margin: 1rem;
   }
-
   .resume-about__text-container {
     width: 50%;
     padding: 5rem;
   }
-
   .resume-about__title {
     padding: 1rem;
-    font-weight: 700;
-    font-size: 5rem;
-    color: rgb(23, 221, 119);
+    font-size: 3.5rem;
   }
-
   .resume-about__desc {
     padding: 1rem;
     font-size: 1.2rem;
-    color: #333;
   }
-
   .resume-about__row {
+    flex-wrap: nowrap;
     margin: 0 auto;
     width: 100%;
     height: 55vh;
   }
-  
   .title-center {
-    flex-direction: column;
     width: 70%;
-    height: fit-content;
   }
-  
   .title-center > div > p {
-    margin: 0 auto;
     text-align: center;
     width: 70%;
-    color: gray;
   }
-  
   .resume-about__skill-box {
-    flex-direction: column;
-    color: #ffffff;
-    background-color: rgb(9,137,120);
-    border: 1px solid black;
     width: 400px;
     height: 350px;
     margin: 0.5rem;
-    border-radius: 6px;
   }
-  
   .resume-about__svg {
     font-size: 5rem;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
   }
-  
   .resume-about__svg:hover {
     scale: 1.1;
-    color: #E41BA0;
   }
-  
   .resume-about__skill {
     font-size: 1.2rem;
     margin-top: 50px;
-    font-weight: bold;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -298,50 +260,42 @@
     flex-wrap: nowrap;
     padding: 5rem;
   }
-
   .resume-about__image {
     width: 50%;
     height: 70vh;
     margin: 1rem;
   }
-
   .resume-about__text-container {
     width: 50%;
     padding: 5rem;
   }
-
   .resume-about__title {
     padding: 1rem;
     font-weight: 700;
     font-size: 5rem;
     color: rgb(23, 221, 119);
   }
-
   .resume-about__desc {
     padding: 1rem;
     font-size: 1.2rem;
     color: #333;
   }
-
   .resume-about__row {
     margin: 0 auto;
     width: 100%;
     height: 55vh;
   }
-
   .title-center {
     flex-direction: column;
     width: 70%;
     height: fit-content;
   }
-
   .title-center > div > p {
     margin: 0 auto;
     text-align: center;
     width: 70%;
     color: gray;
   }
-
   .resume-about__skill-box {
     flex-direction: column;
     color: #ffffff;
@@ -352,18 +306,15 @@
     margin: 0.5rem;
     border-radius: 6px;
   }
-
   .resume-about__svg {
     font-size: 5rem;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
   }
-
   .resume-about__svg:hover {
     scale: 1.1;
     color: #e41ba0;
   }
-
   .resume-about__skill {
     font-size: 1.2rem;
     margin-top: 50px;
