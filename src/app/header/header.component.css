@@ -28,10 +28,9 @@ nav {
   text-decoration: none;
   transition: 0.5s;
 }
-
 .logo-link span {
- color: rgb(23, 221, 119);
-}
+  color: #17dd77;
+ }
 
 .nav-links {
   list-style: none;
@@ -55,4 +54,6 @@ nav {
 .active {
   color: rgb(23, 221, 119);
 }
+
+
 

@@ -22,9 +22,11 @@
   font-size: 5rem;
   font-weight: 700;
   color: #333;
+  display: flex;
 }
 
-.subtitle-highlight{
+.typing{
+  margin-left: 1rem;
   color: #E41BA0;
 }
 
