@@ -12,9 +12,9 @@
     </div>
 </div>
 <div class="resume-grid__container">
-    <div class="resume-component__container">
+    <div class="resume-component__container" (click)="onWebsite('healtyfood')">
         <div class="resume-component__image">
-            <a href="#">
+            <a>
                 <img src="../../assets/recipe-1.png" alt="#">
             </a>
         </div>
@@ -24,51 +24,51 @@
             </div>
         </div>
     </div>
-    <div class="resume-component__container">
+    <div class="resume-component__container"(click)="onWebsite('painting-gallery')">
         <div class="resume-component__image">
-            <a href="#">
-                <img src="../../assets/projects.jpg" alt="#">
+            <a>
+                <img src="../../assets/Painting-gallery.jpg" alt="#">
             </a>
         </div>
         <div class="resume-component__card">
             <div>
-                <span>Text</span>
+                <span>Painting Gallery App</span>
             </div>
         </div>
     </div>
     <div class="resume-component__container">
         <div class="resume-component__image">
             <a href="#">
-                <img src="../../assets/projects.jpg" alt="#">
+                <img src="../../assets/Social-1.jpg" alt="#">
             </a>
         </div>
         <div class="resume-component__card">
             <div>
-                <span>Text</span>
+                <span>Social Media App</span>
             </div>
         </div>
     </div>
     <div class="resume-component__container">
         <div class="resume-component__image">
             <a href="#">
-                <img src="../../assets/projects.jpg" alt="#">
+                <img src="../../assets/uHost1.png" alt="#">
             </a>
         </div>
         <div class="resume-component__card">
             <div>
-                <span>Text</span>
+                <span>uHost</span>
             </div>
         </div>
     </div>
     <div class="resume-component__container">
         <div class="resume-component__image">
             <a href="#">
-                <img src="../../assets/projects.jpg" alt="#">
+                <img src="../../assets/anime-1.png" alt="#">
             </a>
         </div>
         <div class="resume-component__card">
             <div>
-                <span>Text</span>
+                <span>AnimeSnapshot</span>
             </div>
         </div>
     </div>
@@ -85,3 +85,4 @@
         </div>
     </div>
 </div>
+<router-outlet></router-outlet>

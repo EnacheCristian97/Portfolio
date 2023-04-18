@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent {
+
+  constructor(private router: Router, private route: ActivatedRoute,) {}
+
+  onWebsite(where:string){
+    const location = where
+    this.router.navigate([location], {relativeTo:this.route})
+  }
 
 }

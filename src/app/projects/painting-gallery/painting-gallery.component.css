@@ -1,0 +1,77 @@
+.backdrop {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  z-index: 50;
+}
+
+.alert-box {
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 10vw;
+  width: 80vw;
+  height: 100%;
+  padding: 16px;
+  z-index: 100;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.26);
+  padding: 2rem;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+.alert-box h2 {
+  font-size: 2rem;
+  color: #098978;
+  padding: 1rem;
+}
+
+.alert-box h1 {
+  color: #666;
+}
+
+.alert-box p {
+  font-size: 1.7rem;
+  padding: 1rem;
+  background-color: #17dd77;
+  color: #fff;
+}
+
+.img-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.186);
+  margin-bottom: 1rem;
+}
+
+.img-container img {
+  object-position: center;
+  object-fit:contain;
+  width: 100%;
+}
+
+.btn {
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+  color: #fff;
+  background-color: #e41ba0;
+  border: 2px solid #e41ba0;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border: 2px solid #e41ba0;
+  color: #e41ba0;
+}

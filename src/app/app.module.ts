@@ -11,6 +11,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import {NgxTypedJsModule} from 'ngx-typed-js';
 import { ModalComponent } from './modals/modal/modal.component';
+import { HealtyfoodComponent } from './projects/healtyfood/healtyfood.component';
+import { PaintingGalleryComponent } from './projects/painting-gallery/painting-gallery.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ModalComponent } from './modals/modal/modal.component';
     HeaderComponent,
     ProjectsComponent,
     ContactComponent,
-    ModalComponent
+    ModalComponent,
+    HealtyfoodComponent,
+    PaintingGalleryComponent
   ],
   imports: [
     BrowserModule,
