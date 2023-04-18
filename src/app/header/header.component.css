@@ -65,8 +65,13 @@ nav {
     justify-content: center;
     align-items: center;
     margin: 0 5rem;
-    visibility: hidden;
+    display: none;
   }
+
+  .logo {
+    margin: 2rem 1rem;
+  }
+
 }
 @media screen and (min-width: 750px) {
   nav {
@@ -90,6 +95,7 @@ nav {
     margin: 0 5rem;
     visibility: initial;
   }
+
 }
 @media screen and (min-width: 800px) {
   nav {
@@ -134,5 +140,9 @@ nav {
     justify-content: center;
     align-items: center;
     margin: 0 5rem;
+  }
+
+  .logo {
+    margin: 2rem 5rem;
   }
 }

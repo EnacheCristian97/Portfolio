@@ -53,6 +53,10 @@
   transition: 0.5s;
 }
 
+.btn:active{
+  transform: scale(0.9);
+}
+
 fa-icon {
   color: #e41ba0;
   font-size: 1.5rem;
@@ -208,6 +212,17 @@ footer {
   }
   footer {
     display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .contact{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
   .color-bk {
     position: absolute;
@@ -301,7 +316,7 @@ footer {
   footer {
     position: absolute;
     bottom: 2rem;
-    margin-left: 5rem;
+    margin: 0;
   }
   .contact {
     display: flex;
@@ -484,7 +499,7 @@ footer {
   }
   .content {
     position: relative;
-    max-width: 60vw;
+    min-width: 65vw;
     padding: 0 4rem;
     z-index: 10;
   }
@@ -497,7 +512,7 @@ footer {
   }
 
   .subtitle {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
     color: #333;
     display: flex;
@@ -543,7 +558,7 @@ footer {
   footer {
     position: absolute;
     bottom: 2rem;
-    margin-left: 5rem;
+    margin: 0;
   }
   .contact {
     display: flex;
@@ -614,7 +629,7 @@ footer {
   }
   .content {
     position: relative;
-    max-width: 60vw;
+    max-width: 65vw;
     padding: 0 4rem;
     z-index: 10;
   }
@@ -647,9 +662,9 @@ footer {
 
   .btn {
     position: relative;
-    background: rgb(23, 221, 119);
+    background: #17dd77;
     color: #fff;
-    border: none;
+    border: 2px solid #17dd77;
     outline: none;
     padding: 1rem 2rem;
     font-size: 1.25rem;
@@ -658,6 +673,7 @@ footer {
     border-radius: 5px;
     font-weight: 600;
     cursor: pointer;
+    text-align: center;
     transition: 0.5s;
   }
   fa-icon {
@@ -669,9 +685,11 @@ footer {
   .chat {
     color: #333;
     background-color: transparent;
+    border: 2px solid #e41ba0;
   }
   footer {
     position: absolute;
+    width: 15vw;
     bottom: 2rem;
     margin-left: 5rem;
   }
@@ -695,7 +713,7 @@ footer {
   .color-bk {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 2rem;
     width: 800px;
     height: 800px;
     background-image: url("../images/splash.png");

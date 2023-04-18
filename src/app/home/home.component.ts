@@ -18,4 +18,16 @@ export class HomeComponent {
   faDiscord = faDiscord;
   faLinkedin = faLinkedin;
   faGithub = faGithub;
+
+  call = false;
+
+  onClick(event: Event) {
+    const button = document.getElementById('chat');
+
+    this.call = true;
+  }
+
+  onClose() {
+    this.call = false;
+  }
 }
