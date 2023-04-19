@@ -56,6 +56,11 @@
   font-size: 1.2rem;
 }
 
+.card a{
+  text-decoration: none;
+  color: #fff;
+}
+
 .card:hover {
   background-color: transparent;
   border: 2px solid #098978;
@@ -69,18 +74,21 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 110vh;
+    margin-top: 3rem;
   }
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 60px;
-    padding: 3rem;
+  }
+
+  .intro {
+    text-align: center;
   }
   .intro h2 {
     font-size: 2.5rem;
     color: #17dd77;
-    margin: 1rem;
+
   }
   .intro p {
     color: #333;

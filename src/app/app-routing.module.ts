@@ -7,6 +7,8 @@ import { ContactComponent } from "./contact/contact.component";
 import { ModalComponent } from "./modals/modal/modal.component";
 import { HealtyfoodComponent } from "./projects/healtyfood/healtyfood.component";
 import { PaintingGalleryComponent } from "./projects/painting-gallery/painting-gallery.component";
+import { SocialMediaComponent } from "./projects/social-media/social-media.component";
+import { UHostComponent } from "./projects/u-host/u-host.component";
 
 const appRoutes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -14,7 +16,9 @@ const appRoutes: Routes = [
   {path: 'about', component: AboutComponent },
   {path: 'projects', component: ProjectsComponent, children:[
     {path: 'healtyfood', component: HealtyfoodComponent},
-    {path: 'painting-gallery', component: PaintingGalleryComponent}
+    {path: 'painting-gallery', component: PaintingGalleryComponent},
+    {path: 'social-app', component: SocialMediaComponent},
+    {path: 'uhost', component: UHostComponent}
   ]},
   {path: 'contact', component: ContactComponent}
 ]

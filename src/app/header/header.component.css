@@ -18,6 +18,10 @@ nav {
   z-index: 100;
 }
 
+.mobile-nav{
+  display: none;
+}
+
 .logo {
   margin: 2rem 5rem;
 }
@@ -56,15 +60,14 @@ nav {
   color: rgb(23, 221, 119);
 }
 
+.toggle-button{
+  display: none;
+}
+
 /* MEDIA */
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 360px) and (max-height: 900px){
   .nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 5rem;
     display: none;
   }
 
@@ -72,6 +75,61 @@ nav {
     margin: 2rem 1rem;
   }
 
+  .mobile-nav{
+    display: none;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    right: 0;
+    background: white;
+    width: 100%;
+    height: 100%;
+  }
+
+  .mobile-nav__items {
+    position: fixed;
+    top:10vh;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  .mobile-nav__item {
+    margin: 2rem 0;
+    width: 100%;
+  }
+
+  .mobile-nav__item a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+  }
+
+  .toggle-button {
+    display: block;
+    width: 3rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 0.3rem;
+    vertical-align: middle;
+    z-index: 200;
+  }
+
+  .toggle-button:focus {
+    outline: none;
+  }
+
+  .toggle-button__bar {
+    width: 100%;
+    height: 0.2rem;
+    background: black;
+    display: block;
+    margin: 0.6rem 0;
+  }
 }
 @media screen and (min-width: 750px) {
   nav {
@@ -120,29 +178,7 @@ nav {
     visibility: initial;
   }
 }
-@media screen and (min-width: 1800px) {
-  nav {
-    position: sticky;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.5s;
-    background: #fff;
-    z-index: 100;
-  }
-  .nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 5rem;
-  }
 
-  .logo {
-    margin: 2rem 5rem;
-  }
+.open{
+  display: flex;
 }

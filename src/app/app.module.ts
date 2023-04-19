@@ -13,6 +13,8 @@ import {NgxTypedJsModule} from 'ngx-typed-js';
 import { ModalComponent } from './modals/modal/modal.component';
 import { HealtyfoodComponent } from './projects/healtyfood/healtyfood.component';
 import { PaintingGalleryComponent } from './projects/painting-gallery/painting-gallery.component';
+import { SocialMediaComponent } from './projects/social-media/social-media.component';
+import { UHostComponent } from './projects/u-host/u-host.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { PaintingGalleryComponent } from './projects/painting-gallery/painting-g
     ContactComponent,
     ModalComponent,
     HealtyfoodComponent,
-    PaintingGalleryComponent
+    PaintingGalleryComponent,
+    SocialMediaComponent,
+    UHostComponent
   ],
   imports: [
     BrowserModule,

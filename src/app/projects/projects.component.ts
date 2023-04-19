@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -6,13 +6,14 @@ import { ActivatedRoute, Router } from '@angular/router';
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css']
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements OnInit {
 
   constructor(private router: Router, private route: ActivatedRoute,) {}
 
+  ngOnInit(){}
+
   onWebsite(where:string){
-    const location = where
-    this.router.navigate([location], {relativeTo:this.route})
+    this.router.navigate([where], {relativeTo:this.route})
   }
 
 }
